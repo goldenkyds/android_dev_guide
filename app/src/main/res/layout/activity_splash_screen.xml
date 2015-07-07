@@ -8,7 +8,7 @@
         android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="200dp"
-        android:src="@drawable/clock_PNG6611"
+        android:src="@drawable/clock_splash_screen"
         android:layout_height="200dp" />
     <TextView
         android:layout_marginTop="30dp"

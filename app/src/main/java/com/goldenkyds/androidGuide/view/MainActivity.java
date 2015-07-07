@@ -1,7 +1,9 @@
-package com.goldenkyds.androidGuide;
+package com.goldenkyds.androidGuide.view;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import com.goldenkyds.androidGuide.R;
 
 
 public class MainActivity extends AppCompatActivity {
