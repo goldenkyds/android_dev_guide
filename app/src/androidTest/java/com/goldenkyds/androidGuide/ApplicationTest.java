@@ -1,4 +1,4 @@
-package com.goldenkyds.androidguide;
+package com.goldenkyds.androidGuide;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
