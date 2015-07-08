@@ -6,4 +6,4 @@ Basic Splash Screen.
 ![alt tag](https://github.com/goldenkyds/android_dev_guide/blob/master/screenshots/Screenshot_2015-07-07-17-58-05.png)
 
 
-![alt tag](https://github.com/goldenkyds/android_dev_guide/wiki, "Document")
+![alt tag](https://github.com/goldenkyds/android_dev_guide/wiki "Document")
