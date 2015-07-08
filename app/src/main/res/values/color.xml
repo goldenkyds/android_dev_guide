@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="base.white">#fff</color>
+    <color name="base.starting_point">#3fb6ca</color>
+    <color name="base.starting_point_part_ii">#fff</color>
+    <color name="base.starting_point_part_iii">#fff</color>
+    <color name="base.fundamental">#fff</color>
+    <color name="base.fundamental_part_ii">#fff</color>
+    <color name="base.fundamental_part_iii">#fff</color>
 </resources>

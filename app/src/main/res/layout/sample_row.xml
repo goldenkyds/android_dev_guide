@@ -2,13 +2,24 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/base.starting_point"
     android:padding="16dp"
-    android:layout_height="match_parent">
+    android:layout_height="150dp">
 
-    <TextView
-        android:id="@+id/sample_text"
-        android:layout_gravity="center_vertical"
-        android:layout_width="wrap_content"
-        tools:text="Hello World"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/starting_point"
+            android:layout_height="0dp" />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/sample_text"
+            tools:text="Hello, World"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 </FrameLayout>

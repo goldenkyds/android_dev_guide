@@ -7,6 +7,8 @@ import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -19,7 +21,7 @@ import butterknife.InjectView;
 public class MainActivity extends AppCompatActivity {
 
     @InjectView(R.id.basic_list)
-    ListView basicList;
+    GridView basicList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,16 +53,22 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            View view;
+            ViewHolder view;
             if(convertView == null){
-                view = LayoutInflater.from(getBaseContext()).inflate(R.layout.sample_row,parent,false);
-                convertView = view;
+                view = new ViewHolder();
+                convertView = LayoutInflater.from(getBaseContext()).inflate(R.layout.sample_row,parent,false);
+                view.sampleText = (TextView)convertView.findViewById(R.id.sample_text);
                 convertView.setTag(view);
             }else{
-                view = (View)convertView.getTag();
+                view = (ViewHolder)convertView.getTag();
             }
-            ((TextView)view.findViewById(R.id.sample_text)).setText(samples[position]);
-            return view;
+            view.sampleText.setText(samples[position]);
+            return convertView;
+        }
+
+        private class ViewHolder{
+            ImageView sampleImage;
+            TextView sampleText;
         }
     }
 
